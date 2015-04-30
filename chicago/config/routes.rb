@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
 
   root 'places#index'
-
-  get '/places' => 'places#index'
-  
   get '/places/new' => 'places#new'
   post '/places' => 'places#create'
   
